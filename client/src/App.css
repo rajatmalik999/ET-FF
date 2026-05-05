@@ -1,0 +1,138 @@
+/* Global Reset & Body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  /* Deep Blue Gradient */
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Main Layout */
+.main-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Gradient Text for Headlines */
+.text-gradient {
+  background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Card Design */
+.auth-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 2rem;
+  width: 100%;
+  max-width: 450px;
+  color: #fff;
+}
+
+.auth-card .card-body {
+  padding: 0;
+}
+
+.auth-card h3 {
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Styling */
+.auth-card .form-control {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.auth-card .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.auth-card .form-control:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.auth-card .form-label {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Button Styling */
+.auth-card .btn-primary {
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+  /* Vibrant Red/Pink */
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.auth-card .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(221, 36, 118, 0.4);
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+}
+
+/* Links */
+.auth-card a {
+  color: #ffdeeb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.auth-card a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Alert Styling */
+.auth-card .alert-info {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #fff;
+}
+
+/* Dashboard data sections */
+.dashboard-panel-card {
+  max-width: none;
+  width: 100%;
+}
+
+.dashboard-table-wrap {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  overflow: auto;
+}
+
+.dashboard-table {
+  min-width: 900px;
+  margin-bottom: 0;
+}
+
+.dashboard-table th {
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.dashboard-table td {
+  white-space: nowrap;
+}
